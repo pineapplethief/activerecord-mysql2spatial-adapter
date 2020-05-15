@@ -35,6 +35,10 @@ module ActiveRecord
           column(name, :multi_polygon, options)
         end
 
+        def polygon(name, options = {})
+          column(name, :polygon, options)
+        end
+
         def point(name, options = {})
           column(name, :point, options)
         end
